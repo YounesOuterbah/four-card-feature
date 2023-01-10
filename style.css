@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+  margin: 20px 80px;
+}
+
+.container .top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -20px;
+}
+
+.top-section h1:first-child {
+  margin-bottom: -30px;
+  font-weight: 200;
+}
+
+.top-section h1:nth-child(2) {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.top-section p {
+  text-align: center;
+  width: 545px;
+  margin-top: -10px;
+  color: hsl(229, 6%, 66%);
+  font-size: 15px;
+}
+
+.bottom-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  height: 380px;
+  align-items: center;
+  padding: 20px;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0;
+  padding-bottom: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 9px -3px black;
+  border-radius: 8px;
+}
+
+.main {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 15px;
+  color: hsl(229, 6%, 66%);
+  margin-top: -10px;
+}
+
+.box-one {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.box-two {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.box-three {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.box-four {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+img {
+  margin-top: 20px;
+}
+
+.user {
+  margin-top: 170px;
+}
+
+
+@media (max-width:767px) {
+  .top-section h1:first-child {
+    font-size: 24px;
+    width: 400px;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .top-section h1:nth-child(2) {
+    font-size: 24px;
+    width: 400px;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .top-section p {
+    width: 300px;
+    margin-bottom: 40px;
+  }
+
+  .bottom-box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    margin-left: -60px;
+    padding-bottom: 20px;
+  }
+
+  .user {
+    bottom: -70vh;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
